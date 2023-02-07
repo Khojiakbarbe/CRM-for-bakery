@@ -7,6 +7,7 @@ import { FiEdit } from 'react-icons/fi'
 import { RiDeleteBin6Line } from 'react-icons/ri'
 
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
+import { useEffect } from "react";
 
 export default function Xodimlar() {
 
@@ -15,12 +16,13 @@ export default function Xodimlar() {
 
 
     const [all] = useContext(dataContext)
-    const [filter, setFilter] = useState(all)
-    const [forTeam, setForTeam] = useState('barchasi')
-
-    console.log(filter);
+    const [filter, setFilter] = useState('')
+    const [forTeam, setForTeam] = useState('')
 
     //Filter 
+    useEffect(() => {
+        setFilter(all)
+    }, [all])
 
     function filterGroup(e) {
         if (e === 'barchasi') {
