@@ -5,22 +5,22 @@
       "img": "../images/man1.jpg",
       "surname": "Xojiakbar",
       "name": "Nosiraliyev",
-      "birthday": "25.15.2004",
+      "birthday": "12.08.2004",
       "address": "Marg'ilon",
       "group": "A",
       "team": "1",
       "gender": "male",
-      "salary": "300$",
-      "position": "2-Boshqaruvchi",
+      "salary": "800$",
+      "position": "Dasturchi",
       "phone1": "88 645-76-93",
-      "phone2": "99 586-75-86"
+      "phone2": "99 588-88-85"
     },
     {
       "id": 2,
       "img": "../images/2.jpg",
       "surname": "Mominov",
       "name": "Abdurahmon",
-      "birthday": "25.15.1990",
+      "birthday": "25.12.1990",
       "address": "Marg'ilon",
       "group": "A",
       "team": "2",
@@ -86,7 +86,7 @@
       "team": "2",
       "gender": "male",
       "salary": "700$",
-      "position": "Deriktor",
+      "position": "Direktor",
       "phone1": "99 879-99-96",
       "phone2": "94 645-78-78"
     }

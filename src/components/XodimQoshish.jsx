@@ -56,11 +56,11 @@ export default function XodimQoshish() {
     return (
         <div className="container">
             <button className="btn btn-primary mb-3" onClick={() => navigate('/')}><BsArrowLeft /> Orqaga</button>
-            <div className=" bg-white p-3" style={{ borderRadius: '10px' }}>
+            <div className="bg-white p-3" style={{ borderRadius: '10px' }}>
                 <div className="row " >
                     <div className="col-3">
-                        <div className="input-group mb-3 addNewWorkerImg" >
-                            <label className="input-group-text" for="inputGroupFile01">
+                        <div className="addNewWorkerImg input-group mb-3 " >
+                            <label  for="inputGroupFile01">
                                 <img src={gallery} className='img-fluid' alt="" />
                             </label>
                             <input style={{ opacity: '0' }} onChange={(e) => setImg(e.target.files)} type="file" className="form-control" id="inputGroupFile01" />

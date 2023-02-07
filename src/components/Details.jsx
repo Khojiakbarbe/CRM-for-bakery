@@ -2,11 +2,16 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Chart from "./Chart";
+import { BsArrowLeft } from "react-icons/bs";
+
+
+
 
 export default function Details() {
 
     const { id } = useParams()
 
+    const navigate = useNavigate()
 
     const [detail, setDetail] = useState({})
 
@@ -22,6 +27,7 @@ export default function Details() {
 
     return (
         <div className="container mb-5 mt-5">
+            <button className="btn btn-primary mb-3" onClick={() => navigate('/')}><BsArrowLeft /> Orqaga</button>
             <div className="row">
                 <div className="col-4 bg-white p-2" style={{ marginRight: '2%', borderRadius: '10px' }}>
                     <div className="detailsSallImg">
@@ -59,7 +65,7 @@ export default function Details() {
                     <h6>Familiyasi : {detail.surname}</h6>
                     <h6>Tug'ilgan sanasi : {detail.birthday}</h6>
                     <h6>Manzili : {detail.address}</h6>
-                    <h6>Guruh : {detail.name}</h6>
+                    <h6>Guruh : {detail.group}</h6>
                     <h6>Smena : {detail.team}</h6>
                     <h6>Oylik : {detail.salary}</h6>
                     <h6>Lavozimi : {detail.position}</h6>

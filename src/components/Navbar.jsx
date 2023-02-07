@@ -41,7 +41,7 @@ export default function MyNavbar(args) {
                     <NavbarText>
                         <div className="form-check form-switch">
                             <input className="form-check-input" type="checkbox" id="flexSwitchCheckChecked" />
-                            <label className="form-check-label" for="flexSwitchCheckChecked">Checked</label>
+                            <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Checked</label>
                         </div>
                     </NavbarText>
                     <NavbarText className='navFlag'>

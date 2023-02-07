@@ -13,24 +13,24 @@ export default function Xodimlar() {
 
     const navigate = useNavigate();
 
-    
+
     const [all] = useContext(dataContext)
     const [filter, setFilter] = useState(all)
-    const [forTeam, setForTeam] = useState('')
-
+    const [forTeam, setForTeam] = useState('barchasi')
 
     console.log(filter);
 
-    
-    function filterBarchasi() {
-        setFilter(all)
-        setForTeam('barchasi')
-    }
+    //Filter 
 
     function filterGroup(e) {
-        const filter = all.filter(info => info.group.toLowerCase().includes(e.toLowerCase()))
-        setFilter(filter)
-        setForTeam(e)
+        if (e === 'barchasi') {
+            setFilter(all)
+            setForTeam('barchasi')
+        } else {
+            const filter = all.filter(info => info.group.toLowerCase().includes(e.toLowerCase()))
+            setFilter(filter)
+            setForTeam(e)
+        }
     }
 
     function filterTeam(e) {
@@ -43,11 +43,15 @@ export default function Xodimlar() {
         }
     }
 
+
+    // Search
     function search(e) {
         const name = all.filter(post => post.name.toLowerCase().includes(e.toLowerCase()) || post.surname.toLowerCase().includes(e.toLowerCase()))
         setFilter(name)
     }
 
+
+    // Delete
     function deleteMethod(id) {
         fetch(`http://localhost:9000/xodimlar/${id}`, {
             method: 'DELETE'
@@ -61,6 +65,8 @@ export default function Xodimlar() {
                     })
             })
     }
+
+
 
     return (
         <div className="container mb-5 mt-5">
@@ -91,7 +97,7 @@ export default function Xodimlar() {
                                 <strong>Guruhlar</strong>
                             </DropdownToggle>
                             <DropdownMenu dark>
-                                <DropdownItem onClick={(e) => filterBarchasi(e.target.value)} value='barchasi'>
+                                <DropdownItem onClick={(e) => filterGroup(e.target.value)} value='barchasi'>
                                     Barchasi
                                 </DropdownItem>
                                 <DropdownItem onClick={(e) => filterGroup(e.target.value)} value='A'>
@@ -117,7 +123,7 @@ export default function Xodimlar() {
                                 <strong>Smena</strong>
                             </DropdownToggle>
                             <DropdownMenu dark>
-                                <DropdownItem onClick={(e) => filterBarchasi(e.target.value)} value='barchasi'>
+                                <DropdownItem onClick={(e) => filterGroup(e.target.value)} value='barchasi'>
                                     Barchasi
                                 </DropdownItem>
                                 <DropdownItem onClick={(e) => filterTeam(e.target.value)} value='1'>
@@ -137,9 +143,9 @@ export default function Xodimlar() {
                     </div>
                 </div>
                 {
-                    filter.map(post => {
+                    filter && filter.map(post => {
                         return (
-                            <div className="row  xodimlarRow" >
+                            <div key={post.id} className="row  xodimlarRow" >
                                 <div className="col-1 mb-2 text-left" >
                                     <p><strong>{post.id}</strong></p>
                                 </div>

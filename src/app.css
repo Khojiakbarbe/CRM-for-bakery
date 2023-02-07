@@ -86,14 +86,19 @@ body {
 
 /* Add new worker */
 .addNewWorkerImg {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
+    border-radius: 100%;
+}
+.addNewWorkerImg label{
     border-radius: 50%;
 }
 
 .addNewWorkerImg img {
     border-radius: 50%;
     cursor: pointer;
+    width: 60%;
+    margin-top: 5%;
 }
 
 
