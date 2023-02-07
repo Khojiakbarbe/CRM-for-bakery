@@ -3,7 +3,7 @@
     {
       "id": 1,
       "img": "../images/man1.jpg",
-      "surname": "XOjiakbar",
+      "surname": "Xojiakbar",
       "name": "Nosiraliyev",
       "birthday": "25.15.2004",
       "address": "Marg'ilon",
@@ -78,17 +78,17 @@
     {
       "id": 6,
       "img": "../images/6.webp",
-      "surname": "Xazratkulov",
-      "name": "Soxib",
-      "birthday": "12.04.1985",
-      "address": "Farg'ona",
-      "group": "D",
-      "team": "1",
+      "surname": "Sharobov",
+      "name": "Asqarxon",
+      "birthday": "25.9.1985",
+      "address": "farg'ona",
+      "group": "B",
+      "team": "2",
       "gender": "male",
-      "salary": "500$",
-      "position": "Direktor",
-      "phone1": "95 574-78-65",
-      "phone2": "91 586-45-75"
+      "salary": "700$",
+      "position": "Deriktor",
+      "phone1": "99 879-99-96",
+      "phone2": "94 645-78-78"
     }
   ]
 }

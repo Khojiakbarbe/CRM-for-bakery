@@ -7,43 +7,43 @@ export default class Chart extends PureComponent {
   state = {
     data: [
       {
-        name: '',
+        name: 'Monday',
         uv: 4000,
         pv: 2400,
         amt: 2400,
       },
       {
-        name: '',
+        name: 'Tuesday',
         uv: 3000,
         pv: 1398,
         amt: 2210,
       },
       {
-        name: '',
+        name: 'Wednesday',
         uv: 2000,
         pv: 9800,
         amt: 2290,
       },
       {
-        name: '',
+        name: 'Thrusday',
         uv: 2780,
         pv: 3908,
         amt: 2000,
       },
       {
-        name: '',
-        uv: 1890,
+        name: 'Friday',
+        uv: 2390,
         pv: 4800,
         amt: 2181,
       },
       {
-        name: '',
+        name: 'Saturday',
         uv: 2390,
         pv: 3800,
         amt: 2500,
       },
       {
-        name: '',
+        name: 'Sunday',
         uv: 3490,
         pv: 4300,
         amt: 2100,
@@ -74,7 +74,7 @@ export default class Chart extends PureComponent {
             </Bar>
           </BarChart>
         </ResponsiveContainer>
-        <p className="content" style={{opacity: '0'}}>{`Uv of "${activeItem.name}": ${activeItem.uv}`}</p>
+        <p className="content" >{`${activeItem.name}: ${activeItem.uv}`}</p>
       </div>
     );
   }

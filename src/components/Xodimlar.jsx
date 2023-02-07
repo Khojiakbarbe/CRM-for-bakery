@@ -13,12 +13,15 @@ export default function Xodimlar() {
 
     const navigate = useNavigate();
 
-
+    
     const [all] = useContext(dataContext)
-
     const [filter, setFilter] = useState(all)
     const [forTeam, setForTeam] = useState('')
 
+
+    console.log(filter);
+
+    
     function filterBarchasi() {
         setFilter(all)
         setForTeam('barchasi')
@@ -29,7 +32,6 @@ export default function Xodimlar() {
         setFilter(filter)
         setForTeam(e)
     }
-    console.log(forTeam);
 
     function filterTeam(e) {
         if (forTeam === 'barchasi') {
@@ -55,12 +57,13 @@ export default function Xodimlar() {
                     .then(res => {
                         console.log(res);
                         navigate('/')
+                        window.location.reload()
                     })
             })
     }
 
     return (
-        <div className="container">
+        <div className="container mb-5 mt-5">
             <div className="row mb-5">
                 <div className="col-3">
                     <h1>Xodimlar</h1>

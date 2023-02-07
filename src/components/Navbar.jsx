@@ -29,18 +29,11 @@ export default function MyNavbar(args) {
     return (
         <div>
             <Navbar {...args} expand='lg'>
-                <NavbarBrand href="/">reactstrap</NavbarBrand>
+                <NavbarBrand href="/">Bakery</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="me-auto" navbar>
-                        {/* <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">
-                                GitHub
-                            </NavLink>
-                        </NavItem> */}
+                       
                     </Nav>
                     <NavbarText>
                         time ?
