@@ -1,6 +1,21 @@
 {
   "xodimlar": [
     {
+      "id": 1,
+      "img": "../images/man1.jpg",
+      "surname": "XOjiakbar",
+      "name": "Nosiraliyev",
+      "birthday": "25.15.2004",
+      "address": "Marg'ilon",
+      "group": "A",
+      "team": "1",
+      "gender": "male",
+      "salary": "300$",
+      "position": "2-Boshqaruvchi",
+      "phone1": "88 645-76-93",
+      "phone2": "99 586-75-86"
+    },
+    {
       "id": 2,
       "img": "../images/2.jpg",
       "surname": "Mominov",
