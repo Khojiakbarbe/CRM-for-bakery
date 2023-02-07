@@ -160,7 +160,7 @@ export default function Xodimlar() {
                                     <p className="">
                                         <strong onClick={() => navigate(`/xodim/${post.id}`)} className='seeDetails'><AiOutlineEye /></strong>
                                         <span style={{ marginLeft: '5%', marginRight: '5%' }}><FiEdit /></span>
-                                        <span onClick={() => deleteMethod(post.id)}><RiDeleteBin6Line /></span>
+                                        <span className="deleteInfo" onClick={() => deleteMethod(post.id)}><RiDeleteBin6Line /></span>
                                     </p>
                                 </div>
                             </div>

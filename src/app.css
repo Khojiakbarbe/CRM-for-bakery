@@ -55,7 +55,7 @@ body {
         font-size: 50%;
     }
 
-    .nameSurname{
+    .nameSurname {
         margin-top: -1%;
     }
 }
@@ -64,7 +64,6 @@ body {
     border-color: burlywood;
     background-color: rgb(239, 229, 216);
     transition: 1s;
-    cursor: pointer;
 }
 
 .qoshishBtn {
@@ -86,24 +85,26 @@ body {
 }
 
 /* Add new worker */
-.addNewWorkerImg{
+.addNewWorkerImg {
     width: 50%;
     margin: 0 auto;
     border-radius: 50%;
 }
-.addNewWorkerImg img{
+
+.addNewWorkerImg img {
     border-radius: 50%;
     cursor: pointer;
 }
 
 
 /* Details */
-.detailsSallImg{
+.detailsSallImg {
     padding: 5%;
     border: 3px solid rgb(230, 226, 226);
     border-radius: 10px;
 }
-.detailsSallImg img{
+
+.detailsSallImg img {
     margin-left: -4%;
     margin-top: -4%;
     width: 20%;
@@ -112,10 +113,11 @@ body {
     float: left;
 }
 
-.detailsSallImg p{
+.detailsSallImg p {
     font-size: 80%;
     opacity: 0.8;
 }
+
 .detailsSallImgText {
     position: relative;
     right: -5%;
@@ -126,18 +128,27 @@ body {
     padding-left: 5%;
 }
 
-.infos p{
+.infos p {
     width: 50%;
     position: relative;
     right: -50%;
     margin-top: -6%;
     font-weight: 600;
 }
-.infos span{
+
+.infos span {
     font-weight: 400;
     opacity: 0.6;
 }
 
-.seeDetails:hover{
+.seeDetails:hover {
     color: blue;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.deleteInfo:hover {
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
 }

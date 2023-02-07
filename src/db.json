@@ -1,21 +1,6 @@
 {
   "xodimlar": [
     {
-      "id": 1,
-      "img": "../images/man1.jpg",
-      "surname": "O'rinboyev",
-      "name": "Abdushukur",
-      "birthday": "12.15.1980",
-      "address": "fergana",
-      "group": "A",
-      "team": "1",
-      "gender": "male",
-      "salary": "300$",
-      "position": "menejer",
-      "phone1": "94 584-58-79",
-      "phone2": "91 548-97-58"
-    },
-    {
       "id": 2,
       "img": "../images/2.jpg",
       "surname": "Mominov",
