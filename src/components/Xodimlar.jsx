@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
 import { dataContext } from "./ContextProvider/DataProvider";
 import { useNavigate } from 'react-router-dom'
-
 import { AiOutlineEye } from 'react-icons/ai'
 import { FiEdit } from 'react-icons/fi'
 import { RiDeleteBin6Line } from 'react-icons/ri'
-
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
 import { useEffect } from "react";
+
+
 
 export default function Xodimlar() {
 
@@ -49,7 +49,11 @@ export default function Xodimlar() {
     // Search
     function search(e) {
         const name = all.filter(post => post.name.toLowerCase().includes(e.toLowerCase()) || post.surname.toLowerCase().includes(e.toLowerCase()))
-        setFilter(name)
+        if(name.length > 0){
+            setFilter(name)
+        }else{
+            setFilter([{name : 'Bunday xodim topilmadi'}])
+        }
     }
 
 

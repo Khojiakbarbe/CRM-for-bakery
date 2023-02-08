@@ -74,21 +74,6 @@
       "position": "menejer",
       "phone1": "99 879-85-86",
       "phone2": "94 645-78-92"
-    },
-    {
-      "id": 6,
-      "img": "../images/6.webp",
-      "surname": "Sharobov",
-      "name": "Asqarxon",
-      "birthday": "25.9.1985",
-      "address": "farg'ona",
-      "group": "B",
-      "team": "2",
-      "gender": "male",
-      "salary": "700$",
-      "position": "Direktor",
-      "phone1": "99 879-99-96",
-      "phone2": "94 645-78-78"
     }
   ]
 }

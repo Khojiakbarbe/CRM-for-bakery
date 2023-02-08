@@ -42,7 +42,7 @@ body {
 
 
 .xodimlarRow {
-    padding: 1%;
+    padding-top: 1%;
     margin-top: 1%;
     border: 3px solid rgb(230, 226, 226);
     border-radius: 10px;
@@ -57,6 +57,31 @@ body {
 
     .nameSurname {
         margin-top: -1%;
+    }
+
+    /* Yangi xodim qoshish */
+
+    .yangiXodimAddImg{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .addNewWorkerImg p{
+        position: relative;
+        left: 25%;
+    }
+
+    .yangiXodimCol{
+        width: 100%;
+    }
+    .yangiXodimInput{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Details */
+    .chart{
+        position: relative;
+        top: 12%;
     }
 }
 
@@ -86,20 +111,39 @@ body {
 
 /* Add new worker */
 .addNewWorkerImg {
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
     border-radius: 100%;
+    background: #DBD4CA;
 }
-.addNewWorkerImg label{
-    border-radius: 50%;
+
+.addNewWorkerImg label {
+    margin: 0 auto;
 }
 
 .addNewWorkerImg img {
-    border-radius: 50%;
     cursor: pointer;
-    width: 60%;
-    margin-top: 5%;
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 25%;
+    position: relative;
+    top: 12%;
+    left: 25%;
 }
+
+.addNewWorkerImg p {
+    z-index: 5;
+    margin-top: -15%;
+    position: relative;
+    right: -25%;
+}
+
+.addNewWorkerImg input {
+    width: 200%;
+    z-index: -5;
+    opacity: 0;
+}
+
 
 
 /* Details */
@@ -156,4 +200,8 @@ body {
     color: red;
     cursor: pointer;
     transition: 0.5s;
+}
+.chart{
+    position: relative;
+    bottom: -25%;
 }
